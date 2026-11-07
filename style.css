@@ -1,0 +1,44 @@
+:root {
+  --primary: #4b2e83;     /* nav + buttons background */
+  --accent: #f2c14e;      /* button hover / highlights */
+  --light: #f7f5fb;       /* page background, text on dark */
+  --dark: #1e1b26;        /* body text, footer background */
+}
+body {
+  font-family: "Source Sans 3", sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  margin: 0;
+  line-height: 1.6;
+}
+h1, h2, h3, .brand { font-family: "Playfair Display", serif; }
+nav {
+  background: var(--primary);
+  color: var(--light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.button {
+  background: var(--accent);
+  color: var(--dark);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.button:hover { background: var(--light); }
+main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+article {
+  background: #fff;
+  border-left: 6px solid var(--primary);
+  padding: 1rem 1.5rem;
+  margin-bottom: 3rem;   /* whitespace between items */
+}
+footer {
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1.5rem;
+}
